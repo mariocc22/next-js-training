@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.header {
+  border: 2px solid white;
+  background-repeat: 4px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.navigation a:hover {
+  color: lightcoral;
+  text-decoration: underline;
+}
