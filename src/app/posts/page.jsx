@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Suspense } from "react";
+import ListOfPosts from "./ListOfPosts";
 
-const PostPage = () => {
+export default function PostPage() {
   return (
-    <h1>Mostrar posts!</h1>
-  )
+    <>
+      {/* con esto harias un tipo "loader" para cualquier llamado asyncrono que esta en proceso o en "loading" */}
+      <Suspense fallback={<p>Cargando posts...</p>}>
+        <ListOfPosts />
+      </Suspense>
+    </>
+  );
 }
-
-export default PostPage
